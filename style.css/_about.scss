@@ -2,6 +2,10 @@
     width: 100%;
     height: 60rem;
     position: relative;
+    display: grid;
+    grid-template-columns: 20% 1fr 1fr 23%;
+    justify-content: center;
+    align-items: center;
 }
 
 .aboutMe-wrapper img {
@@ -10,4 +14,25 @@
     object-fit: cover;
     z-index: -1;
     position: absolute;
+}
+
+.aboutMe-img {
+    display: grid;
+    grid-column: 2/3;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 610px;
+        height: 689px;
+    }
+}
+
+.aboutMe-content {
+    display: grid;
+    grid-column: 3/4;
+    width: 453px;
+    height: 541px;
+    background: white;
+    box-shadow:2px 0px 20px rgba(0,0,0,0.4);
 }

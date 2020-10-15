@@ -7,6 +7,8 @@
 
 html, body {
   font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  letter-spacing: 2px;
   width: 100%;
   height: 100%;
 }
@@ -75,12 +77,95 @@ footer {
   background-color: #FBF9F9;
   width: 100%;
   height: 50rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% 1fr 1fr 10%;
+      grid-template-columns: 10% 1fr 1fr 10%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.intro-profilePicture {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 5rem;
+}
+
+.intro-img {
+  width: 535px;
+  height: 556px;
+}
+
+.intro-content {
+  background-color: white;
+  height: 322px;
+  width: 550px;
+  margin-left: 5rem;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -webkit-box-shadow: 2px 0px 20px rgba(0, 0, 0, 0.4);
+          box-shadow: 2px 0px 20px rgba(0, 0, 0, 0.4);
+  padding: 3rem 2rem;
+}
+
+.intro-content p {
+  font-size: 20px;
+}
+
+.intro-content h1 {
+  font-size: 40px;
+  color: black;
+  padding: 10px 0px;
+}
+
+.intro-content .cv-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 35px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #DDC264;
+  height: 55px;
+  width: 211px;
+  border: none;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
 }
 
 .aboutMe-wrapper {
   width: 100%;
   height: 60rem;
   position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 1fr 1fr 23%;
+      grid-template-columns: 20% 1fr 1fr 23%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .aboutMe-wrapper img {
@@ -90,6 +175,38 @@ footer {
      object-fit: cover;
   z-index: -1;
   position: absolute;
+}
+
+.aboutMe-img {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutMe-img img {
+  width: 610px;
+  height: 689px;
+}
+
+.aboutMe-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  width: 453px;
+  height: 541px;
+  background: white;
+  -webkit-box-shadow: 2px 0px 20px rgba(0, 0, 0, 0.4);
+          box-shadow: 2px 0px 20px rgba(0, 0, 0, 0.4);
 }
 
 .skills-wrapper {
@@ -132,8 +249,20 @@ footer {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 100px;
   height: 415px;
   width: 650px;
+}
+
+.skill-text p, h1 {
+  font-size: 20px;
+  color: white;
 }
 
 .portfolio-wrapper {
