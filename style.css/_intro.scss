@@ -8,19 +8,6 @@
     align-items: center;
 }
 
-.intro-profilePicture {
-    display: grid;
-    grid-column: 3/4;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 5rem;
-}
-
-.intro-img {
-    width: 535px;
-    height: 556px;
-}
-
 .intro-content {
     background-color: white;
     height: 322px;
@@ -53,6 +40,25 @@
         font-size: 20px;
         color: black;
     }
+
+    .cv-button:hover {
+        background: #EFDA8E;
+        transition: all ease 0.5s;
+    }
 }
+
+.intro-profilePicture {
+    display: grid;
+    grid-column: 3/4;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5rem;
+}
+
+.intro-img {
+    width: 535px;
+    height: 556px;
+}
+
 
 

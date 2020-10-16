@@ -21,8 +21,11 @@
     grid-column: 2/3;
     justify-content: center;
     align-items: center;
+    z-index: 0;
 
     img {
+        display: grid;
+        grid-column: 2/3;
         width: 610px;
         height: 689px;
     }
@@ -35,4 +38,23 @@
     height: 541px;
     background: white;
     box-shadow:2px 0px 20px rgba(0,0,0,0.4);
+    z-index: 2;
+    position: absolute;
+}
+
+.aboutMe-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px 70px;
+
+    h1{
+        color: black;
+        font-size: 30px;
+        padding-bottom: 5px;
+    }
+    h2{
+        font-size: 21px;
+        padding-bottom: 50px;
+    }
 }

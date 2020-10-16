@@ -89,26 +89,6 @@ footer {
           align-items: center;
 }
 
-.intro-profilePicture {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-column: 3/4;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-bottom: 5rem;
-}
-
-.intro-img {
-  width: 535px;
-  height: 556px;
-}
-
 .intro-content {
   background-color: white;
   height: 322px;
@@ -152,6 +132,32 @@ footer {
   color: black;
 }
 
+.intro-content .cv-button:hover {
+  background: #EFDA8E;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.intro-profilePicture {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 5rem;
+}
+
+.intro-img {
+  width: 535px;
+  height: 556px;
+}
+
 .aboutMe-wrapper {
   width: 100%;
   height: 60rem;
@@ -189,9 +195,15 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 0;
 }
 
 .aboutMe-img img {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
   width: 610px;
   height: 689px;
 }
@@ -207,6 +219,33 @@ footer {
   background: white;
   -webkit-box-shadow: 2px 0px 20px rgba(0, 0, 0, 0.4);
           box-shadow: 2px 0px 20px rgba(0, 0, 0, 0.4);
+  z-index: 2;
+  position: absolute;
+}
+
+.aboutMe-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 8px 70px;
+}
+
+.aboutMe-text h1 {
+  color: black;
+  font-size: 30px;
+  padding-bottom: 5px;
+}
+
+.aboutMe-text h2 {
+  font-size: 21px;
+  padding-bottom: 50px;
 }
 
 .skills-wrapper {
@@ -278,5 +317,202 @@ footer {
      object-fit: cover;
   z-index: -1;
   position: absolute;
+}
+
+.portfolio-content {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  -ms-grid-columns: 20% 1fr 1fr 20%;
+      grid-template-columns: 20% 1fr 1fr 20%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portfolio-showcase {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  -ms-grid-rows: 10% 1fr 1fr 10%;
+      grid-template-rows: 10% 1fr 1fr 10%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portfolio-box-1 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  height: 322px;
+  width: 550px;
+  position: relative;
+  -webkit-box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.portfolio-box-1 img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.portfolio-box-1 h1 {
+  font-size: 35px;
+  color: black;
+}
+
+.portfolio-box-1 p {
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.portfolio-box-1 a {
+  font-size: 30px;
+  padding-top: 30px;
+  text-decoration: none;
+  color: black;
+}
+
+.portfolio-box-1 a:hover {
+  color: white;
+}
+
+.portfolio-box-2 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  height: 322px;
+  width: 550px;
+  position: relative;
+  -webkit-box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.portfolio-box-2 img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: inherit;
+     object-fit: inherit;
+}
+
+.portfolio-box-2 h1 {
+  font-size: 35px;
+  color: black;
+}
+
+.portfolio-box-2 p {
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.portfolio-box-2 a {
+  font-size: 30px;
+  padding-top: 30px;
+  text-decoration: none;
+  color: black;
+}
+
+.portfolio-box-2 a:hover {
+  color: white;
+}
+
+.text-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: rgba(239, 218, 142, 0.9);
+  display: none;
+}
+
+.portfolio-box-1:hover .text-overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.portfolio-box-2:hover .text-overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.portfolio-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #FFFFFF;
+  height: 342px;
+  width: 570px;
+  margin-top: 22.5rem;
+  padding: 4rem 5rem;
+  margin-left: 5rem;
+  -webkit-box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.4);
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+}
+
+.portfolio-text h1 {
+  color: black;
+  font-size: 40px;
+  padding-bottom: 35px;
+}
+
+.portfolio-text p {
+  color: black;
+  padding-bottom: 35px;
+}
+
+.portfolio-text button {
+  font-family: 'Roboto', 'sans-serif';
+  height: 70px;
+  width: 211px;
+  font-size: 18px;
+  background: #DDC264;
+  border: none;
+}
+
+.portfolio-text button:hover {
+  cursor: pointer;
+  background: #EFDA8E;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
 }
 /*# sourceMappingURL=app.css.map */

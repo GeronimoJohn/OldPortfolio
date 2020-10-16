@@ -11,3 +11,158 @@
     z-index: -1;
     position: absolute;
 }
+
+.portfolio-content {
+    display: grid; 
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 20% 1fr 1fr 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-showcase {
+    grid-column: 2/3;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 10% 1fr 1fr 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-box-1{
+    grid-row: 2/3;
+    height: 322px;
+    width: 550px;
+    position:relative;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.4);
+
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+
+    }
+
+    h1{
+        font-size: 35px;
+        color: black;
+    }
+
+    p{
+        font-size: 20px;
+        padding-top: 10px
+    }
+
+    a {
+        font-size: 30px;
+        padding-top: 30px;
+        text-decoration: none;
+        color: black;
+    }
+
+    a:hover {
+        color: white;
+    }
+}
+
+.portfolio-box-2{
+    grid-row: 3/4;
+    height: 322px;
+    width: 550px;
+    position:relative;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.4);
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: inherit;
+    }
+
+    h1{
+        font-size: 35px;
+        color: black;
+    }
+
+    p{
+        font-size: 20px;
+        padding-top: 10px
+    }
+
+    a {
+        font-size: 30px;
+        padding-top: 30px;
+        text-decoration: none;
+        color: black;
+    }
+
+    a:hover {
+        color: white;
+    }
+}
+
+.text-overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(239, 218, 142, 0.90);
+    display:none;
+}
+
+.portfolio-box-1:hover .text-overlay{
+    display:flex;
+}
+
+.portfolio-box-2:hover .text-overlay{
+    display:flex;
+}
+
+.portfolio-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FFFFFF;
+    height: 342px;
+    width: 570px;
+    margin-top: 22.5rem;
+    padding: 4rem 5rem;
+    margin-left: 5rem;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.4);
+    grid-column: 3/4;
+
+
+
+    h1{
+        color: black;
+        font-size: 40px;
+        padding-bottom: 35px;
+    }
+
+    p {
+        color: black;
+        padding-bottom: 35px;
+    }
+
+    button{
+        font-family: 'Roboto', 'sans-serif';
+        height: 70px;
+        width: 211px;
+        font-size: 18px;
+        background: #DDC264;
+        border: none;
+    }
+
+    button:hover{
+        cursor: pointer;
+        background: #EFDA8E;
+        transition: all ease 0.5s;
+    }
+}
