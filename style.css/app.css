@@ -67,7 +67,8 @@ nav {
   height: 30rem;
 }
 
-footer {
+.footer {
+  position: absolute;
   height: 10rem;
   width: 100%;
   background-color: #343434;
@@ -388,7 +389,8 @@ footer {
 }
 
 .portfolio-box-1 a:hover {
-  color: white;
+  font-size: 35px;
+  font-weight: bold;
 }
 
 .portfolio-box-2 {
@@ -427,7 +429,8 @@ footer {
 }
 
 .portfolio-box-2 a:hover {
-  color: white;
+  font-size: 35px;
+  font-weight: bold;
 }
 
 .text-overlay {
@@ -449,7 +452,7 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: rgba(239, 218, 142, 0.9);
+  background-color: rgba(255, 255, 255, 0.7);
   display: none;
 }
 
@@ -514,5 +517,39 @@ footer {
   background: #EFDA8E;
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
+}
+
+.contact-wrapper {
+  width: 100%;
+  height: 30rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.contact-details {
+  background-color: #252525;
+  height: 322px;
+  width: 550px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 /*# sourceMappingURL=app.css.map */
