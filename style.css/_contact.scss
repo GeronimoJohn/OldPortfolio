@@ -5,14 +5,60 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    flex-direction: row;
 }
 
-.contact-details{
+.contact-box{
     background-color: #252525;
     height: 322px;
     width: 550px;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+
+    h1{
+        font-size: 20px;
+    }
 }
+
+.contact-details{
+    display: flex;
+    flex-direction: column;
+    border-right: 6px solid black;
+    height: 250px;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+
+    .contact {
+        padding-top: 25px;
+        a {
+            font-size: 35px;
+            text-decoration: none;
+            color: white;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+    }
+}
+
+.contact a:hover i{
+    color: #DDC264;
+    transition: all ease 0.5s;
+}
+
+.contact-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    letter-spacing: 15px;
+    padding-left: 10px;
+
+    h1{
+        font-size: 30px;
+    }
+}
+
