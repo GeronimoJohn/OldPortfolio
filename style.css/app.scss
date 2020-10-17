@@ -58,10 +58,21 @@ nav{
 }
 
 .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     height: 10rem;
     width: 100%;
     background-color: #343434;
+    h1{
+        padding-right: 30px;
+    }
+
+    h4{
+        color: white;
+        padding-left: 80px;
+    }
 }
 
 @import 'intro';

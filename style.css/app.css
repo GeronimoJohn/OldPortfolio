@@ -68,10 +68,28 @@ nav {
 }
 
 .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   height: 10rem;
   width: 100%;
   background-color: #343434;
+}
+
+.footer h1 {
+  padding-right: 30px;
+}
+
+.footer h4 {
+  color: white;
+  padding-left: 80px;
 }
 
 .intro-wrapper {
@@ -569,7 +587,7 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-right: 6px solid black;
+  border-right: 6px solid white;
   height: 250px;
   width: 40%;
   -webkit-box-pack: center;
