@@ -12,35 +12,51 @@ html, body {
     height: 100%;
 }
 
+// Navbar
+
 nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 8vh;
-    background-color: #343434;
+    min-height: 10vh;
+    background-color: #FBF9F9;
     box-shadow: 2px 2px 12px rgba(0,0,0,0.05);
 }
 
-.logo {
-    color: #E7B944;
-    letter-spacing: 4px;
-}
-
-.nav-links {
+.nav-width{
     display: flex;
-    width: 30%;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    width:75%;
+
+    .logo {
+        letter-spacing: 5px;
+        #lg {
+            font-size: 3vh;
+            color: black;
+        }
+    }
+    
+    .nav-links {
+        display: flex;
+        width: 25%;
+        justify-content: space-around;
+    }
+    
+    .nav-links li{
+        font-size: 20px;
+        list-style: none;
+        font-weight: 800;
+    }
+    
+    .nav-links a {
+        color: black;
+        text-decoration: none;
+        letter-spacing: 2px;
+    }
 }
 
-.nav-links li{
-    list-style: none;
-}
 
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    letter-spacing: 2px;
-}
 
 .intro-container {
     width: 100%;
@@ -57,6 +73,8 @@ nav{
     height: 30rem;
 }
 
+// Footer
+
 .footer {
     display: flex;
     justify-content: center;
@@ -66,6 +84,7 @@ nav{
     width: 100%;
     background-color: #343434;
     h1{
+        font-size: 35px;
         padding-right: 30px;
     }
 
@@ -75,8 +94,51 @@ nav{
     }
 }
 
+// Animation
+.introAnimation{
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider{
+    background: rgb(126, 128, 133);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+}
+
+.introAnimation-text {
+    color: rgb(111, 111, 190);
+}
+
+.hide {
+    background: black;
+    overflow: hidden;
+}
+
+.hide span{
+    transform: translateY(100%);
+    display: inline-block;
+    font-family: 'Heebo', sans-serif;
+    font-size: 5rem;
+}
+
 @import 'intro';
 @import 'about';
 @import 'skills';
 @import 'portfolio';
 @import 'contact';
+
+@media screen and (max-width: 900px){
+    
+}

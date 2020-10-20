@@ -9,22 +9,25 @@
 }
 
 .intro-content {
-    background-color: white;
-    height: 322px;
+    background-color: #231F20;
+    height: 362px;
     width: 550px;
     margin-left: 5rem;
     grid-column: 2/3;
     box-shadow:2px 0px 20px rgba(0,0,0,0.4);
-    padding: 3rem 2rem;
+    padding: 4rem 6rem;
 
     p{
-        font-size: 20px
+        font-size: 18px;
+        color: white;
+        padding-top: 13px;
+        font-weight: 10;
     }
 
-    h1{
-        font-size: 40px;
-        color: black;
-        padding: 10px 0px;
+    h5{
+        font-size: 30px;
+        color: white;
+        padding: 20px 0px;
     }
 
     .cv-button{
@@ -32,17 +35,17 @@
         margin-top: 35px;
         justify-content: center;
         align-items: center;
-        background-color: #DDC264;
-        height: 55px;
-        width: 211px;
+        background-color:#EFDA8E;
+        height: 45px;
+        width: 171px;
         border: none;
         text-decoration: none;
         font-size: 20px;
-        color: black;
+        color: rgb(49, 49, 49);
     }
 
     .cv-button:hover {
-        background: #EFDA8E;
+        background: #d4be6b;
         transition: all ease 0.5s;
     }
 }
@@ -57,7 +60,7 @@
 
 .intro-img {
     width: 535px;
-    height: 556px;
+    height: 576px;
 }
 
 
