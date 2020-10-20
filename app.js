@@ -7,4 +7,3 @@ tl.fromTo('.logo', {opacity: 0}, {opacity: 1, duration: 1});
 tl.fromTo('.nav-links', {opacity: 0}, {opacity: 1, duration: 1}, "-=1");
 tl.fromTo('.intro-content', {opacity: 0, x:-30}, {opacity: 1, x:0, duration: 1}, "-=1");
 tl.fromTo('.intro-profilePicture', {opacity: 0, x:30}, {opacity: 1, x:0, duration: 1}, "-=1");
-
