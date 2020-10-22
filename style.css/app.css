@@ -464,7 +464,7 @@ nav {
 
 .portfolio-box-1 p {
   font-size: 20px;
-  padding-top: 10px;
+  padding: 10px 4rem;
 }
 
 .portfolio-box-1 a {
@@ -493,8 +493,8 @@ nav {
 .portfolio-box-2 img {
   height: 100%;
   width: 100%;
-  -o-object-fit: inherit;
-     object-fit: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .portfolio-box-2 h1 {
@@ -504,7 +504,7 @@ nav {
 
 .portfolio-box-2 p {
   font-size: 20px;
-  padding-top: 10px;
+  padding: 10px 4rem;
 }
 
 .portfolio-box-2 a {
@@ -538,7 +538,7 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.863);
   display: none;
 }
 

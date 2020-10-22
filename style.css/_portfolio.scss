@@ -43,7 +43,6 @@
         height: 100%;
         width: 100%;
         object-fit: cover;
-
     }
 
     h1{
@@ -53,7 +52,8 @@
 
     p{
         font-size: 20px;
-        padding-top: 10px
+        padding: 10px 4rem;
+
     }
 
     a {
@@ -79,7 +79,7 @@
     img {
         height: 100%;
         width: 100%;
-        object-fit: inherit;
+        object-fit: cover;
     }
 
     h1{
@@ -89,7 +89,7 @@
 
     p{
         font-size: 20px;
-        padding-top: 10px
+        padding: 10px 4rem;
     }
 
     a {
@@ -115,7 +115,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.863);
     display:none;
 }
 
